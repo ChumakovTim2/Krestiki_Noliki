@@ -120,10 +120,14 @@ while game_over == False:
     else:
         print('ничья')
         game_over = True
-        victories = 'Дружба'
+        victories = 'дружба'
 
     man = not (man)
 
 # Объявим победителя. Покажем карту.
 print_maps()
-print('Победил', victories)
+if victories == 'дружба':
+    print ('Победила дружба')
+else:
+    print('Победил', victories)
+
